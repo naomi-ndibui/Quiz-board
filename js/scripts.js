@@ -3,45 +3,40 @@ var pointPerCorrect = 25;
 
 
 function percentage(score) {
-return "Your score is " + parseInt((score / 75) * 100) + "%";
+  return "Your score is " + parseInt((score / 100) * 100) + "%";
 }
 
-$(document).ready(function(){
-   $("#questions").submit(function (event) {
+$(document).ready(function() {
+  $("#Questions").submit(function(event) {
 
 
-      $('#result').text('');
-      var score = 0;
-      var answerOne = ($("input[type=radio][name=questionOneAnswer]:checked").val());
-      var answerTwo = ($("input[type=radio][name=questionTwoAnswer]:checked").val());
-      var answerThree = ($("input[type=radio][name=questionThreeAnswer]:checked").val());
-      var answerFour = ($("input[type=radio][name=questionFourAnswer]:checked").val());
+    $('#result').text('');
+    var score = 0;
+    var answer1 = ($("input[name=answer1]:checked").val());
+    var answer2 = ($("input[name=answer2]:checked").val());
+    var answer3 = ($("input[name=answer3]:checked").val());
+    var answer4 = ($("input[name=answer4]:checked").val());
 
-      if (answerOne === undefined || answerTwo === undefined || answerThree === undefined || answerFour === undefined) {
-       $('#questionsIncomplete').text('Please complete the questions before submitting');
-       $('#questionsIncomplete').fadeOut(10000);
-     } else {
-              if (answerOne === answers[0]) {
-         score += pointPerCorrect;
-       }
-              if (answerTwo === answers[1]) {
-         score += pointPerCorrect;
-       }
-              if (answerThree === answers[2]) {
-         score += pointPerCorrect;
-       }
-             if (answerFour === answers[3]) {
-         score += pointPerCorrect;
-       }
-
-
-             $("input[type=radio][name=questionOneChoice]:checked").prop('checked', false);
-             $("input[type=radio][name=questionTwoChoice]:checked").prop('checked', false);
-             $("input[type=radio][name=questionThreeChoice]:checked").prop('checked', false);
-             $("input[type=radio][name=questionFourChoice]:checked").prop('checked', false);
-             $('#questionsIncomplete').text('');
-             $('#result').text(percentage(score));
-     }
-               event.preventDefault();
-      });
-     });
+    if (answer1 === undefined || answer2 === undefined || answer3 === undefined || answer4 === undefined) {
+      $('#questionsIncomplete').text('Please complete the questions before submitting');
+      $('#questionsIncomplete').fadeOut(10000);
+    } else {
+      if (answer1 === answers[0]) {
+        score += pointPerCorrect;
+      }
+      if (answer2 === answers[1]) {
+        score += pointPerCorrect;
+      }
+      if (answer3 === answers[2]) {
+        score += pointPerCorrect;
+      }
+      if (answer4 === answers[3]) {
+        score += pointPerCorrect;
+      }
+    }
+    $('.well').hide();
+$('#footer').hide();
+$('#results').html('<p><strong>Your score is:</strong></p>').show();
+    event.preventDefault();
+  });
+});
