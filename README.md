@@ -9,9 +9,8 @@ You would need the following to access the website:Smart phone/PC/laptop/Desktop
 There should be no problems while when loading and running the project.
 ## Technologies Used
 * HTML
-* CSS:styles.CSS
-* Bootstrap:bootstrap.CSS
-* JQuery: JQuery.js, scripts.js.
+* CSS: Bootstrap
+* Scripts: JavaScript, JQuery
 # BDD
 In this quiz board one is encouraged to answer all the questions without failure:
 
