@@ -15,43 +15,48 @@
       <div class="panel panel-info">
         <h1>QUIZ BOARD</h1>
       </div>
-    <div class="well">
-      <form id="Quetions" action="index.html" method="POST" name="Questions">
-        <p><strong>1.What variables are used in JavaScript programs?</strong></p>
-        <br>
-        <input type="radio" name="questionOne" id="answer" value="correct">Storing numbers, dates or other values<br>
-        <input type="radio" name="questionOne" id="answer" value="wrong">causing high school algebra flashbacks<br>
-        <input type="radio" name="questionOne" id="answer" value="wrong">Varying randomly<br>
+      <form id="Questions" action="index.html" method="POST" name="Questions">
+        <div class="well">
+          <p><strong>1.What variables are used in JavaScript programs?</strong></p>
+          <br>
+          <input type="radio" name="answer" id="answer" value="correct">Storing numbers, dates or other values<br>
+          <input type="radio" name="answer" id="answer" value="wrong">causing high school algebra flashbacks<br>
+          <input type="radio" name="answer" id="answer" value="wrong">Varying randomly<br>
+        </div>
+        <div class="well">
+          <p><strong>2.which of the following are capabilites of functions in javascript?</strong></p>
+          <br>
+          <input type="radio" name="answer2" id="answer2" value="wrong">Return a value<br>
+          <input type="radio" name="answer2" id="answer2" value="wrong">Accept parameters and return a value<br>
+          <input type="radio" name="answer2" id="answer2" value="correct">Accept parameters<br>
+        </div>
+        <div class="well">
+          <p><strong>3.Which tag is an extension to HTML that can enclose any number of JavaScript statements?</strong></p>
+          <br>
+          <input type="radio" name="answer3" id="answer3" value="wrong">body tag<br>
+          <input type="radio" name="answer3" id="answer3" value="correct">script tag<br>
+          <input type="radio" name="answer3" id="answer3" value="wrong">head tag<br>
+        </div>
+        <div class="well">
+          <p><strong>4.HTML stands for?</strong></p>
+          <br>
+          <input type="radio" name="answer4" id="answer4" value="wrong">High Text Markup Language<br>
+          <input type="radio" name="answer4" id="answer4" value="correct">Hyper Text Markup Languag<br>
+          <input type="radio" name="answer4" id="answer4" value="wrong">Hyper Tabular Markup Language<br>
+        </div>
+        <div id="results" class="alert alert-success">
+          <p><strong>Your score is:</strong></p>
+        </div>
     </div>
-    <div class="well">
-      <p><strong>2.which of the following are capabilites of functions in javascript?</strong></p>
-      <br>
-      <input type="radio" name="questionOne" id="answer" value="wrong">Return a value<br>
-      <input type="radio" name="questionOne" id="answer" value="wrong">Accept parameters and return a value<br>
-      <input type="radio" name="questionOne" id="answer" value="correct">Accept parameters<br>
+    <div id="footer">
+      <div id='questionsIncomplete'></div>
+      <input type="reset" value="CANCEL" id="button" class="btn btn-success">
+      <input type="submit" name="results" value="SUBMIT" id="button" class="btn btn-danger">
+      <img class="bks">
+      <img class="image" src="books.jpg" />
     </div>
-    <div class="well">
-      <p><strong>3.Which tag is an extension to HTML that can enclose any number of JavaScript statements?</strong></p>
-      <br>
-      <input type="radio" name="questionOne" id="answer" value="wrong">body tag<br>
-      <input type="radio" name="questionOne" id="answer" value="correct">script tag<br>
-      <input type="radio" name="questionOne" id="answer" value="wrong">head tag<br>
-    </div>
-    <div class="well">
-      <p><strong>4.HTML stands for?</strong></p>
-      <br>
-      <input type="radio" name="questionOne" id="answer" value="wrong">High Text Markup Language<br>
-      <input type="radio" name="questionOne" id="answer" value="correct">Hyper Text Markup Languag<br>
-      <input type="radio" name="questionOne" id="answer" value="wrong">Hyper Tabular Markup Language<br>
-    </div>
+    </form>
   </div>
-    <div id='questionsIncomplete'></div>
-      <input type="reset" value="CANCEL" id="button" class="btn btn-success" onclick="check();">
-       <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-danger" onClick="check();">
-    <img class="bks">
-    <img class="image" src="books.jpg" />
-  </form>
-</div>
 </body>
 
 </html>
