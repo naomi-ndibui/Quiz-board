@@ -12,6 +12,12 @@ There should be no problems while when loading and running the project.
 * CSS:styles.CSS
 * Bootstrap:bootstrap.CSS
 * JQuery: JQuery.js, scripts.js
+##BDD
+In this quiz board one is encouraged to answer all the questions without failure:
+
+* If you don't answer all the questions right your marks will still be displayed
+* If you fail to mark any answer you'll receive an incomplete alert
+* If your give the correct answer to a question you're awarded 25points
 ## Support and contact details
 
 
