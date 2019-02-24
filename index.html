@@ -13,7 +13,6 @@
   <div class="container">
     <div class="jumbotron">
       <div class="panel panel-info">
-        <img class="bks">
         <img class="image" src="books.jpg" />
         <h1>QUIZ BOARD</h1>
       </div>
@@ -46,15 +45,15 @@
           <input type="radio" name="answer4" id="answer4" value="8">Hyper Text Markup Languag<br>
           <input type="radio" name="answer4" id="answer4" value="9">Hyper Tabular Markup Language<br>
         </div>
-        <div id="results" class="alert alert-success">
-          <p><strong>Your score is:</strong></p>
+        <div id="results-container" class="alert alert-success">
+          <div  id="results"></div>
+          <input type="button" name="back" value="GO BACK" id="button" class="btn btn-primary" onclick="goBack()">
         </div>
     </div>
     <div id="footer">
       <div id='questionsIncomplete'></div>
       <input type="reset" value="CANCEL" id="button" class="btn btn-success">
       <input type="submit" name="results" value="SUBMIT" id="button" class="btn btn-danger">
-      <img class="bks">
       <img class="image" src="books.jpg" />
     </div>
     </form>
