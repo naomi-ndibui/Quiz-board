@@ -13,73 +13,47 @@
   <div class="container">
     <div class="jumbotron">
       <div class="panel panel-info">
-      <h1>QUIZ BOARD</h1>
+        <h1>QUIZ BOARD</h1>
+      </div>
+    <div class="well">
+      <form id="Quetions" action="index.html" method="POST" name="Questions">
+        <p><strong>1.What variables are used in JavaScript programs?</strong></p>
+        <br>
+        <input type="radio" name="questionOne" id="answer" value="correct">Storing numbers, dates or other values<br>
+        <input type="radio" name="questionOne" id="answer" value="wrong">causing high school algebra flashbacks<br>
+        <input type="radio" name="questionOne" id="answer" value="wrong">Varying randomly<br>
     </div>
-      <p>
+    <div class="well">
+      <p><strong>2.which of the following are capabilites of functions in javascript?</strong></p>
+      <br>
+      <input type="radio" name="questionOne" id="answer" value="wrong">Return a value<br>
+      <input type="radio" name="questionOne" id="answer" value="wrong">Accept parameters and return a value<br>
+      <input type="radio" name="questionOne" id="answer" value="correct">Accept parameters<br>
     </div>
-    <form id='questions'>
-      <div id='questionOne'>
-        <div class='question'><strong>1.What variables are used in JavaScript programs?</strong>
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionOneAnswer' value='Storing numbers, dates or other values'>Storing numbers, dates or other values
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionOneAnswer' value='Varying  randomly'>Varying randomly
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionOneAnswer' value='causing high school algebra flashbacks'>causing high school algebra flashbacks
-        </div>
-      </div>
-      <div id='questionTwo'>
-        <div class='question'><strong>2.which of the following are capabilites of functions in javascript?</strong>
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionTwoAnswer' value='Return a value'>Return a value
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionTwoAnswer' value='Accept parameters and return a value'>Accept parameters and return a value
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionTwoAnswer' value='Accept parameters'>Accept parameters
-        </div>
-      </div>
-      <div id='questionThree'>
-        <div class='question'><strong>3.Which tag is an extension to HTML that can enclose any number of JavaScript statements?</strong>
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionThreeAnswer' value='body tag' >body tag
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionThreeAnswer' value='script tag'>script tag
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionThreeAnswer' value='head tag'>head tag
-        </div>
-      </div>
-      <div id='questionFour'>
-        <div class='question'><strong>4.HTML stands for?</strong>
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionFourAnswer' value='High Text Markup Language' >High Text Markup Language
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionFourAnswer' value='Hyper Text Markup Language'>Hyper Text Markup Language
-        </div>
-        <div class='answer'>
-          <input type="radio" name='questionFourAnswer' value='Hyper Tabular Markup Language'>Hyper Tabular Markup Language
-        </div>
-      </div>
- <div id='questionsIncomplete'></div>
- <div>
- <input type="reset"value="CANCEL">
- <input type="submit"value="SUBMIT">
- </div>
- <img class="bks">
-<img class="image" src="books.jpg"/>
-</div>
+    <div class="well">
+      <p><strong>3.Which tag is an extension to HTML that can enclose any number of JavaScript statements?</strong></p>
+      <br>
+      <input type="radio" name="questionOne" id="answer" value="wrong">body tag<br>
+      <input type="radio" name="questionOne" id="answer" value="correct">script tag<br>
+      <input type="radio" name="questionOne" id="answer" value="wrong">head tag<br>
     </div>
-</form>
+    <div class="well">
+      <p><strong>4.HTML stands for?</strong></p>
+      <br>
+      <input type="radio" name="questionOne" id="answer" value="wrong">High Text Markup Language<br>
+      <input type="radio" name="questionOne" id="answer" value="correct">Hyper Text Markup Languag<br>
+      <input type="radio" name="questionOne" id="answer" value="wrong">Hyper Tabular Markup Language<br>
+    </div>
+  </div>
+    <div id='questionsIncomplete'></div>
+    <div>
+      <input type="reset" value="CANCEL">
+      <input type="submit" value="SUBMIT">
+    </div>
+    <img class="bks">
+    <img class="image" src="books.jpg" />
+  </div>
+  </form>
 </body>
 
 </html>
