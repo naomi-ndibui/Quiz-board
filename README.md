@@ -8,10 +8,10 @@ You would need the following to access the website:Smart phone/PC/laptop/Desktop
 ## Known Bugs
 There should be no problems while when loading and running the project.
 ## Technologies Used
-
-
-
-
+* HTML
+* CSS:styles.CSS
+* Bootstrap:bootstrap.CSS
+* JQuery: JQuery.js, scripts.js
 ## Support and contact details
 
 
