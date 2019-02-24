@@ -3,13 +3,16 @@ var pointPerCorrect = 25;
 
 
 function percentage(score) {
-  return "Your score is " + parseInt((score / 100) * 100) + "%";
+  return parseInt((score / 100) * 100) + "%";
+}
+
+function goBack(){
+location.reload();
 }
 
 $(document).ready(function() {
+  $('#results-container').hide();
   $("#Questions").submit(function(event) {
-
-
     $('#result').text('');
     var score = 0;
     var answer1 = ($("input[name=answer1]:checked").val());
@@ -33,10 +36,11 @@ $(document).ready(function() {
       if (answer4 === answers[3]) {
         score += pointPerCorrect;
       }
+      $('.well').hide();
+      $('#footer').hide();
+      $('#results-container').fadeIn(500);
+      $('#results').html('<p><strong>Your score is:' + percentage(score) + '</strong></p>').show();
     }
-    $('.well').hide();
-$('#footer').hide();
-$('#results').html('<p><strong>Your score is:</strong></p>').show();
     event.preventDefault();
   });
 });
