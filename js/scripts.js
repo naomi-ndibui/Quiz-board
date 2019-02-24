@@ -1,4 +1,4 @@
-var answers = ["Storing numbers,dates or other values", "Accept parameters", "script tag", "Hyper Text Markup Language"];
+var answers = ["1", "c", "y", "8"];
 var pointPerCorrect = 25;
 
 
