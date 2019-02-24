@@ -6,8 +6,7 @@ This project shows that as a user, you'll see a multi-choice questions when the 
 ## Setup/Installation Requirements
 You would need the following to access the website:Smart phone/PC/laptop/Desktop/Tablet or any PDA, Internet connectivity (either wireless or ethernet), and a web browser(Chrome is most recommendable).You can then access the poject through  https://naomi-ndibui.github.io/Quiz-board/.
 ## Known Bugs
-
-
+There should be no problems while when loading and running the project.
 ## Technologies Used
 
 
