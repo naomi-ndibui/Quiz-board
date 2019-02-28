@@ -1,14 +1,16 @@
 var answers = ["1", "c", "y", "8"];
 var pointPerCorrect = 25;
 
-
 function percentage(score) {
   return parseInt((score / 100) * 100) + "%";
 }
 
-function goBack(){
-location.reload();
+function goBack() {
+  location.reload();
 }
+
+
+
 
 $(document).ready(function() {
   $('#results-container').hide();
